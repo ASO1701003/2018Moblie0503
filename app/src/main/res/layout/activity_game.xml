@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/string_return"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_kakekin" />
+
+    <ImageView
+        android:id="@+id/img_frist"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_first"
+        app:layout_constraintEnd_toStartOf="@+id/img_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/img_second"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_second"
+        app:layout_constraintEnd_toStartOf="@+id/img_third"
+        app:layout_constraintStart_toEndOf="@+id/img_frist"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/img_third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_third"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_second"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:id="@+id/txt_temoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/string_temoti"
+        app:layout_constraintBottom_toTopOf="@+id/txt_temotikin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_first" />
+
+    <TextView
+        android:id="@+id/txt_temotikin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txt_kake"
+        app:layout_constraintEnd_toEndOf="@+id/txt_temoti"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temoti" />
+
+    <TextView
+        android:id="@+id/txt_kake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:text="@string/string_kakekoin"
+        app:layout_constraintBottom_toTopOf="@+id/txt_kakekin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_temotikin" />
+
+    <TextView
+        android:id="@+id/txt_kakekin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_return"
+        app:layout_constraintStart_toStartOf="@+id/btn_return"
+        app:layout_constraintTop_toBottomOf="@+id/txt_kake" />
+
+    <Button
+        android:id="@+id/btn_first"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="35dp"
+        android:text="stop"
+        app:layout_constraintBottom_toTopOf="@+id/txt_temoti"
+        app:layout_constraintEnd_toStartOf="@+id/btn_second"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_frist" />
+
+    <Button
+        android:id="@+id/btn_second"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="254dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:text="stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_third"
+        app:layout_constraintStart_toEndOf="@+id/btn_first"
+        app:layout_constraintTop_toBottomOf="@+id/img_second" />
+
+    <Button
+        android:id="@+id/btn_third"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="260dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:text="stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_second"
+        app:layout_constraintTop_toBottomOf="@+id/img_third" />
+
+</android.support.constraint.ConstraintLayout>

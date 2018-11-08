@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">2018Moblie-0503</string>
+    <string name="reset">掛け金をリセッット</string>
+    <string name="title_text1">ミニスロットゲーム</string>
+    <string name="string_kake">掛け金UP</string>
+    <string name="string_kakedown">掛け金DOWN</string>
+    <string name="string_start">スタート</string>
+    <string name="string_return">戻る</string>
+    <string name="string_hya">ひゃっはーー</string>
+    <string name="string_temoti">手持ちのコイン</string>
+    <string name="string_kakekoin">かけてるコイン</string>
+    <string name="string_repeat">もう一回やるお＾＾</string>
+</resources>
