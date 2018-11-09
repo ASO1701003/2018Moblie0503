@@ -17,6 +17,7 @@ class GameActivity : AppCompatActivity() {
     val orange = 6;
     val seven = 7;
     val waltermelon = 8;
+
     var first=0;
     var second =0;
     var third =0;
